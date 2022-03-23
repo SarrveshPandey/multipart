@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.solution.s.formultiplateform.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/appicon"
+        android:label="Multiplateform"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Add_Cat"
+            android:exported="false" />
+        <activity
+            android:name=".ListAnimal"
+            android:exported="false" />
+        <activity
+            android:name=".Pug"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".ImgUpload"
+            android:exported="false" />
+        <activity
+            android:name=".Newform"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

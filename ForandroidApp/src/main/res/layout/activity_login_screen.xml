@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:padding="6dp"
+            android:text="welcome to Multiplateform Login"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="21dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:hint="Please enter email ."
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/et_passwor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:hint="Please enter password ."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_email1"
+            app:layout_constraintStart_toStartOf="@+id/et_email1"
+            app:layout_constraintTop_toBottomOf="@+id/et_email1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="casual"
+        android:textColor="#ffffff"
+        android:background="@drawable/custom"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom"
+        android:layout_margin="4dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="New user ,go and register"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
